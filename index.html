@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Flexbox and Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Task 0: Navigation Bar -->
+    <header class="navbar" id="top">
+        <a class="logo" href="#top">Elnur</a>
+
+        <nav class="nav-links">
+            <a href="#cards">Cards</a>
+            <a href="#layout">Layout</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#portfolio">Portfolio</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Task 1: Card Row -->
+        <section id="cards">
+            <h1>Assignment 2: Flexbox and Grid</h1>
+            <h2>Task 1: Card Row</h2>
+
+            <div class="card-row">
+
+                <article class="card">
+                    <img
+                        src="https://picsum.photos/id/10/600/400"
+                        alt="Forest and lake"
+                    >
+                    <h3>Nature</h3>
+                    <p>Quiet places with trees and fresh air.</p>
+                    <button type="button">Read more</button>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="https://picsum.photos/id/29/600/400"
+                        alt="Mountain landscape"
+                    >
+                    <h3>Mountains</h3>
+                    <p>
+                        Mountains are a great place for walking,
+                        taking photos, and spending time outside.
+                    </p>
+                    <button type="button">Read more</button>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="https://picsum.photos/id/164/600/400"
+                        alt="Coastal landscape"
+                    >
+                    <h3>Travel</h3>
+                    <p>Visit new places and enjoy different views.</p>
+                    <button type="button">Read more</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Task 2: Page Layout with Grid Areas -->
+        <section id="layout">
+            <h2>Task 2: Page Layout with Grid Areas</h2>
+
+            <div class="page-grid">
+
+                <header class="layout-header">
+                    <h3>Header</h3>
+                    <p>This header spans both columns.</p>
+                </header>
+
+                <aside class="layout-sidebar">
+                    <h3>Sidebar</h3>
+                    <p>Navigation and extra information.</p>
+                </aside>
+
+                <div class="layout-main">
+                    <h3>Main Content</h3>
+                    <p>
+                        This is the main content area.
+                        CSS Grid places it to the right of the sidebar.
+                    </p>
+                </div>
+
+                <footer class="layout-footer">
+                    <p>Footer: spans both columns.</p>
+                </footer>
+
+            </div>
+        </section>
+
+        <!-- Task 3: Image Gallery -->
+        <section id="gallery">
+            <h2>Task 3: Image Gallery</h2>
+
+            <div class="gallery-grid">
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://picsum.photos/id/10/600/400"
+                        alt="Forest and lake"
+                    >
+                    <figcaption>Forest</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://picsum.photos/id/29/600/400"
+                        alt="Mountain landscape"
+                    >
+                    <figcaption>Mountains</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://picsum.photos/id/164/600/400"
+                        alt="Coastal landscape"
+                    >
+                    <figcaption>Coast</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://picsum.photos/id/15/600/400"
+                        alt="Water flowing over rocks"
+                    >
+                    <figcaption>River</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://picsum.photos/id/16/600/400"
+                        alt="Sea and rocks"
+                    >
+                    <figcaption>Sea</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://picsum.photos/id/28/600/400"
+                        alt="Forest landscape"
+                    >
+                    <figcaption>Trees</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://picsum.photos/id/65/600/400"
+                        alt="Path through nature"
+                    >
+                    <figcaption>Path</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://picsum.photos/id/76/600/400"
+                        alt="Outdoor landscape"
+                    >
+                    <figcaption>Landscape</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img
+                        src="https://picsum.photos/id/83/600/400"
+                        alt="Natural scenery"
+                    >
+                    <figcaption>Scenery</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Task 4: Portfolio Page -->
+        <section id="portfolio">
+            <h2>Task 4: Portfolio Page</h2>
+
+            <div class="portfolio">
+
+                <header class="portfolio-header">
+                    <h3>My Portfolio</h3>
+
+                    <nav class="nav-links">
+                        <a href="#projects">Projects</a>
+                        <a href="#about">About</a>
+                    </nav>
+                </header>
+
+                <div class="portfolio-main">
+
+                    <div class="projects" id="projects">
+
+                        <article class="project-card">
+                            <h3>Card Layout</h3>
+                            <p>
+                                Three cards arranged in a row
+                                using Flexbox.
+                            </p>
+                            <a class="button" href="#cards">
+                                View project
+                            </a>
+                        </article>
+
+                        <article class="project-card">
+                            <h3>Grid Layout</h3>
+                            <p>
+                                A layout with a header, sidebar,
+                                main content, and footer.
+                            </p>
+                            <a class="button" href="#layout">
+                                View project
+                            </a>
+                        </article>
+
+                        <article class="project-card">
+                            <h3>Image Gallery</h3>
+                            <p>
+                                Nine images arranged using CSS Grid
+                                with captions on hover.
+                            </p>
+                            <a class="button" href="#gallery">
+                                View project
+                            </a>
+                        </article>
+
+                    </div>
+
+                    <aside class="portfolio-sidebar" id="about">
+                        <h3>About Me</h3>
+                        <p>My name is Elnur.</p>
+                        <p>I am a Computer Science student.</p>
+                        <p>I am learning HTML, CSS, Flexbox, and Grid.</p>
+                    </aside>
+
+                </div>
+
+                <footer class="portfolio-footer">
+                    <p>Elnur | Frontend Assignment 2</p>
+                </footer>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
