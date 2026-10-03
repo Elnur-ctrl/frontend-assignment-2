@@ -1,99 +1,66 @@
-# Assignment 2: Advanced CSS — Flexbox and Grid
+# Assignment 3: Responsive Web Design
 
-Name: Elnur [Your surname]
+Name: Bizhan Elnur
 Group: IT-2513
 
-## About the project
+!!! Task 0: Responsive Typography !!!
 
-This project is a single webpage with five tasks.
-It uses HTML and CSS to demonstrate Flexbox, CSS Grid,
-hover effects, and responsive layouts.
+The heading and paragraph sizes change on mobile, tablet and desktop.
 
-## How to open
+![Task 0](screenshots/task0.png)
 
-Download the project and open index.html in a browser.
-An internet connection is needed to load the images.
+!!! Task 1: CSS Media Queries !!!
 
-## Part 1: Flexbox
+The layout uses CSS media queries without Bootstrap grid classes.
 
-### Task 0: Navigation Bar
+- Mobile: one box per row.
+- Tablet: two boxes per row.
+- Desktop: three boxes per row.
 
-The navigation bar has a logo on the left and links on the right.
-Flexbox places them in one row.
-justify-content separates the logo and the links.
-align-items centers them vertically, and gap adds space between links.
+![Task 1 Mobile](screenshots/task1-mobile.png)
+![Task 1 Tablet](screenshots/task1-tablet.png)
+![Task 1 Desktop](screenshots/task1-desktop.png)
 
-![Task 0: Navigation Bar](screenshots/task0.png)
+!!! Task 2: Bootstrap Grid !!!
 
-### Task 1: Card Row
+The layout uses the Bootstrap 12-column grid.
 
-This section contains three cards.
-Each card has an image, a title, text, and a button.
+- Mobile: each column takes the full row.
+- Tablet: two columns in the first row and one in the second.
+- Desktop: three equal columns, each taking four grid columns.
 
-Flexbox arranges the cards in a row with equal heights.
-The cards have equal gaps and move up slightly on hover.
-The Read more buttons are visual examples without an action.
+![Task 2 Mobile](screenshots/task2-mobile.png)
+![Task 2 Tablet](screenshots/task2-tablet.png)
+![Task 2 Desktop](screenshots/task2-desktop.png)
 
-![Task 1: Card Row](screenshots/task1.png)
+!!! Task 3: Bootstrap Navigation Bar !!!
 
-## Part 2: Grid System
+The navigation bar has a name logo on the left and links on the right.
+On smaller screens, the links collapse into a hamburger menu.
 
-### Task 2: Page Layout with Grid Areas
+![Task 3 Desktop](screenshots/task3-desktop.png)
+![Task 3 Mobile](screenshots/task3-mobile.png)
 
-This layout contains a header, a sidebar, main content, and a footer.
-CSS Grid defines the rows and columns.
+!!! Task 4: Responsive Portfolio !!!
 
-The header and footer span both columns.
-The sidebar is on the left, and the main content is on the right.
+The portfolio includes project cards on the left,
+personal information and contact details on the right,
+and a footer at the bottom.
 
-![Task 2: Page Layout](screenshots/task2.png)
+Bootstrap grid classes arrange the cards and sidebar.
+Custom media queries change font sizes, spacing and text visibility.
 
-### Task 3: Image Gallery
+![Task 4 Mobile](screenshots/task4-mobile.png)
+![Task 4 Tablet](screenshots/task4-tablet.png)
+![Task 4 Desktop](screenshots/task4-desktop.png)
 
-The gallery contains nine images.
-CSS Grid places them in three equal columns on wide screens.
-The rows have equal heights, and gap adds spacing.
+!!! Work Process !!!
 
-A caption appears over each image on hover.
+I created the HTML structure and added CSS styles.
+I used media queries for typography and the box layout.
+I added Bootstrap columns, a navigation bar and portfolio cards.
 
-![Task 3: Image Gallery](screenshots/task3.png)
+!!! How to Open !!!
 
-## Part 3: Combining Flexbox and Grid
-
-### Task 4: Portfolio Page
-
-The portfolio has a header, a main section, a sidebar, and a footer.
-
-The header uses Flexbox for navigation.
-The main section uses CSS Grid to place projects on the left
-and information on the right.
-
-Each project card uses Flexbox to arrange its title,
-description, and project link.
-The footer spans the full width of the portfolio.
-
-![Task 4: Portfolio Page](screenshots/task4.png)
-
-## Responsive layout
-
-Media queries change the layout on smaller screens.
-Cards and portfolio sections move into one column.
-The gallery changes from three columns to two, then to one.
-
-## Work process summary
-
-The HTML file defines the page sections and their content.
-The CSS file adds colors, spacing, Flexbox layouts,
-Grid layouts, and hover effects.
-Media queries adapt the page to smaller screens.
-
-## Files
-
-- index.html — page structure and content
-- style.css — styles and layouts
-- screenshots/ — screenshots of all five tasks
-- README.md — project report
-
-## Image source
-
-Images are loaded from https://picsum.photos.
+Open index.html in a browser.
+An internet connection is required to load Bootstrap.

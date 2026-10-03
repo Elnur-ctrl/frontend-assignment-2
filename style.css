@@ -1,25 +1,12 @@
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f3f5f8;
-    color: #243247;
-    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #222;
+    font-size: 16px;
 }
 
-h1,
-h2,
-h3,
-p {
-    margin-top: 0;
-}
-
-h1 {
-    font-size: 30px;
+section {
+    padding: 24px 0;
 }
 
 h2 {
@@ -27,287 +14,122 @@ h2 {
     font-size: 24px;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 30px 20px;
+h4 {
+    font-size: 20px;
 }
 
-section {
-    margin-bottom: 50px;
-}
-
-/* Task 0: Navigation Bar */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 30px;
-    background-color: #243247;
-    color: white;
-}
-
-.logo {
+/* Task 0: mobile */
+.text h1 {
     font-size: 26px;
-    font-weight: bold;
 }
 
-.nav-links {
+.text p {
+    font-size: 16px;
+}
+
+/* Task 1: mobile */
+.boxes {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 16px;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-/* Shared button styles */
-
-button,
-.button {
-    display: inline-block;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 6px;
-    background-color: #2456a6;
-    color: white;
-    font: inherit;
-    cursor: pointer;
-    text-align: center;
-}
-
-button:hover,
-.button:hover {
-    background-color: #183e7a;
-}
-
-/* Task 1: Card Row */
-
-.card-row {
-    display: flex;
-    align-items: stretch;
-    gap: 20px;
-}
-
-.card {
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
+.boxes .box {
     width: 100%;
+}
+
+.box {
+    background-color: #0d6efd;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Task 4 */
+.card-img-top {
     height: 180px;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #e9ecef;
+}
+
+.info {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
     border-radius: 6px;
-    margin-bottom: 15px;
 }
 
-.card button {
-    margin-top: auto;
-    align-self: flex-start;
+.info p {
+    overflow-wrap: anywhere;
 }
 
-/* Task 2: Page Layout with Grid Areas */
-
-.page-grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto minmax(200px, auto) auto;
-    grid-template-areas:
-        "header header"
-        "sidebar main"
-        "footer footer";
-    gap: 15px;
+.extra {
+    display: none;
 }
 
-.page-grid > * {
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.layout-header {
-    grid-area: header;
-    background-color: #243247;
-    color: white;
-}
-
-.layout-sidebar {
-    grid-area: sidebar;
-    background-color: #dce7f7;
-}
-
-.layout-main {
-    grid-area: main;
-    background-color: white;
-}
-
-.layout-footer {
-    grid-area: footer;
-    background-color: #243247;
+footer {
+    background-color: #212529;
     color: white;
     text-align: center;
-}
-
-/* Task 3: Image Gallery */
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    gap: 15px;
-}
-
-.gallery-item {
-    position: relative;
-    margin: 0;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.gallery-item img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.gallery-item figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 12px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    opacity: 0;
-    transition: opacity 0.2s;
-}
-
-.gallery-item:hover figcaption {
-    opacity: 1;
-}
-
-/* Task 4: Portfolio Page */
-
-.portfolio {
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.portfolio-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
     padding: 20px;
-    background-color: #243247;
-    color: white;
 }
 
-.portfolio-header h3 {
+footer p {
     margin: 0;
 }
 
-.portfolio-main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 15px;
-}
-
-.project-card {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border: 1px solid #d5deea;
-    border-radius: 8px;
-}
-
-.project-card .button {
-    margin-top: auto;
-    align-self: flex-start;
-}
-
-.portfolio-sidebar {
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #dce7f7;
-}
-
-.portfolio-footer {
-    padding: 20px;
-    background-color: #243247;
-    color: white;
-    text-align: center;
-}
-
-.layout-footer p,
-.portfolio-footer p {
-    margin: 0;
-}
-
-/* Responsive layout */
-
-@media (max-width: 700px) {
-    .navbar,
-    .portfolio-header {
-        flex-direction: column;
-        align-items: flex-start;
+/* Tablet */
+@media (min-width: 768px) {
+    .text h1 {
+        font-size: 32px;
     }
 
-    .card-row {
-        flex-direction: column;
+    .text p {
+        font-size: 18px;
     }
 
-    .page-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto minmax(200px, auto) auto;
-        grid-template-areas:
-            "header"
-            "sidebar"
-            "main"
-            "footer";
+    .boxes .box {
+        width: calc((100% - 16px) / 2);
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+    section {
+        padding: 32px 0;
     }
 
-    .portfolio-main,
-    .projects {
-        grid-template-columns: 1fr;
+    .info {
+        padding: 24px;
+    }
+
+    .extra {
+        display: block;
     }
 }
 
-@media (max-width: 450px) {
-    .gallery-grid {
-        grid-template-columns: 1fr;
+/* Desktop */
+@media (min-width: 992px) {
+    .text h1 {
+        font-size: 40px;
+    }
+
+    .text p {
+        font-size: 20px;
+    }
+
+    .boxes .box {
+        width: calc((100% - 32px) / 3);
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .info {
+        padding: 30px;
     }
 }

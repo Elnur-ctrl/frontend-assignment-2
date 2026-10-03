@@ -3,254 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elnur's Portfolio</title>
+    <title>Elnur Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Task 0: Navigation Bar -->
-    <header class="navbar" id="top">
-        <a class="logo" href="#top">Elnur</a>
+    <!-- Task 3 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Elnur</a>
 
-        <nav class="nav-links">
-            <a href="#cards">Cards</a>
-            <a href="#layout">Layout</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#portfolio">Portfolio</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#text">Typography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#layout">Layout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#grid">Grid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="container">
 
-        <!-- Task 1: Card Row -->
-        <section id="cards">
-            <h1>Elnur's Portfolio</h1>
-            <h2>Task 1: Card Row</h2>
-
-            <div class="card-row">
-
-                <article class="card">
-                    <img
-                        src="images\AITU.jpg"
-                        alt="Student University"
-                    >
-                    <h3>AITU</h3>
-                    <p><p>Computer Science Student</p></p>
-                    <button type="button">Read more</button>
-                </article>
-
-                <article class="card">
-                    <img
-                        src="images\coding.png"
-                        alt="Mountain landscape"
-                    >
-                    <h3>Coding (languages)</h3>
-                    <p>
-                        I’ve coded in C++, C#, JavaScript, and much more.
-                    </p>
-                    <button type="button">Read more</button>
-                </article>
-
-                <article class="card">
-                    <img
-                        src="images\PC.jpg"
-                        alt="Coastal landscape"
-                    >
-                    <h3>"PC"</h3>
-                    <p>I really love testing and learning about things; I built my first computer myself, buying all the parts on my own.</p>
-                    <button type="button">Read more</button>
-                </article>
-
-            </div>
+        <!-- Task 0 -->
+        <section id="text" class="text">
+            <h1>Task 0: Responsive Typography</h1>
+            <p>
+                I am Elnur, a Computer Science student.
+                I am learning HTML, CSS and Bootstrap.
+            </p>
         </section>
 
-        <!-- Task 2: Page Layout with Grid Areas -->
+        <!-- Task 1 -->
         <section id="layout">
-            <h2>Task 2: Page Layout with Grid Areas</h2>
+            <h2>Task 1: CSS Media Queries</h2>
 
-            <div class="page-grid">
+            <div class="boxes">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
+        </section>
 
-                <header class="layout-header">
-                    <h3>Header</h3>
-                    <p>This header spans both columns.</p>
-                </header>
+        <!-- Task 2 -->
+        <section id="grid">
+            <h2>Task 2: Bootstrap Grid</h2>
 
-                <aside class="layout-sidebar">
-                    <h3>Sidebar</h3>
-                    <p>Navigation and extra information.</p>
-                </aside>
-
-                <div class="layout-main">
-                    <h3>Main Content</h3>
-                    <p>
-                        This is the main content area.
-                        CSS Grid places it to the right of the sidebar.
-                    </p>
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="box">Column 1</div>
                 </div>
-
-                <footer class="layout-footer">
-                    <p>Footer: spans both columns.</p>
-                </footer>
-
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="box">Column 2</div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="box">Column 3</div>
+                </div>
             </div>
         </section>
 
-        <!-- Task 3: Image Gallery -->
-        <section id="gallery">
-            <h2>Task 3: Image Gallery</h2>
-
-            <div class="gallery-grid">
-
-                <figure class="gallery-item">
-                    <img
-                        src="images\AITU.jpg"
-                        alt="University4"
-                    >
-                    <figcaption>University</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img
-                        src="images\AITU2.jpg"
-                        alt="University"
-                    >
-                    <figcaption>University</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img    
-                        src="images\images.jpg"
-                        alt="EXPO"
-                    >
-                    <figcaption>EXPO</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img
-                        src="images\coding.png"
-                        alt="C#"
-                    >
-                    <figcaption>C#</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img
-                        src="images\PY.jpg"
-                        alt="Python"
-                    >
-                    <figcaption>Python</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img
-                        src="images\images (1).jpg"
-                        alt="JavaScript"
-                    >
-                    <figcaption>javascript</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img
-                        src="images\images (4).jpg"
-                        alt="Чарынский каньон"
-                    >
-                    <figcaption>
-                        Charyn Canyon</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img
-                        src="images\images (2).jpg"
-                        alt="Мой город"
-                    >
-                    <figcaption>Мy hometown</figcaption>
-                </figure>
-
-                <figure class="gallery-item">
-                    <img
-                        src="images\1672212682.jpg"
-                        alt="Медеу"
-                    >
-                    <figcaption>
-                        Medeu</figcaption>
-                </figure>
-
-            </div>
-        </section>
-
-        <!-- Task 4: Portfolio Page -->
+        <!-- Task 4 -->
         <section id="portfolio">
-            <h2>Task 4: Portfolio Page</h2>
+            <h2>Task 4: My Portfolio</h2>
 
-            <div class="portfolio">
+            <div class="row g-4">
+                <div class="col-12 col-lg-8">
+                    <h3>My Projects</h3>
 
-                <header class="portfolio-header">
-                    <h3>My Portfolio</h3>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100">
+                                <img src="images/tickets.png"
+                                class="card-img-top"
+                                alt="Support Tickets project">
 
-                    <nav class="nav-links">
-                        <a href="#projects">Projects</a>
-                        <a href="#about">About</a>
-                    </nav>
-                </header>
+                                <div class="card-body">
+                                    <h4 class="card-title">Support Tickets</h4>
+                                    <p class="card-text">
+                                        A C# program that checks and processes support tickets.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="portfolio-main">
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100">
+                                <img src="images/drone.png"
+                                    class="card-img-top"
+                                    alt="Drone Charging project">
 
-                    <div class="projects" id="projects">
+                                <div class="card-body">
+                                    <h4 class="card-title">Drone Charging</h4>
+                                    <p class="card-text">
+                                        A C# program that processes battery charging commands.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                        <article class="project-card">
-                            <h3>Card Layout</h3>
-                            <p>
-                                Three cards arranged in a row
-                                using Flexbox.
-                            </p>
-                            <a class="button" href="#cards">
-                                View project
-                            </a>
-                        </article>
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100">
+                                <img src="images/website.png"
+                                    class="card-img-top"
+                                    alt="Website project">
 
-                        <article class="project-card">
-                            <h3>Grid Layout</h3>
-                            <p>
-                                A layout with a header, sidebar,
-                                main content, and footer.
-                            </p>
-                            <a class="button" href="#layout">
-                                View project
-                            </a>
-                        </article>
-
-                        <article class="project-card">
-                            <h3>Image Gallery</h3>
-                            <p>
-                                Nine images arranged using CSS Grid
-                                with captions on hover.
-                            </p>
-                            <a class="button" href="#gallery">
-                                View project
-                            </a>
-                        </article>
-
+                                <div class="card-body">
+                                    <h4 class="card-title">Website</h4>
+                                    <p class="card-text">
+                                        A student web project created during my studies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <aside class="portfolio-sidebar" id="about">
-                        <h3>About Me</h3>
-                        <p>My name is Elnur.</p>
-                        <p>I am a Computer Science student.</p>
-                        <p>I am learning HTML, CSS, Flexbox, and Grid 
-                            and also a lot related to computers and cars; plus, I really love traveling.
-                        </p>
-                    </aside>
-
                 </div>
 
-                <footer class="portfolio-footer">
-                    <p>Elnur | Frontend Assignment 2</p>
-                </footer>
+                <aside class="col-12 col-lg-4">
+                    <div class="info">
+                        <h3>About Me</h3>
+                        <p>Name: Bizhan Elnur</p>
+                        <p>Group: IT-2513 (The best of University)</p>
+                        <p>Computer Science student at Astana IT University.</p>
 
+                        <p class="extra">
+                            I am learning programming and web development.
+                        </p>
+
+                        <h3>Contact</h3>
+                        <p>Email: BIZHAN.com</p>
+                        <p>Number: +7 777 777 7777</p>
+                    </div>
+                </aside>
             </div>
         </section>
 
     </main>
 
+    <footer>
+        <p>Elnur | IT-2513</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
